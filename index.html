@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ketahanan Pangan Indonesia</title>
+
+    <style>
+        /* Mengatur tampilan dasar halaman */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f6ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Bagian header */
+        header {
+            background: linear-gradient(135deg, #6c35b5, #9b65e5);
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 17px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        /* Kontainer utama */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Bagian penjelasan */
+        .intro {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+        }
+
+        .intro h2 {
+            color: #713ab9;
+            margin-bottom: 12px;
+        }
+
+        /* Bagian tips */
+        .tips-title {
+            text-align: center;
+            color: #713ab9;
+            margin-bottom: 20px;
+        }
+
+        .tips {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        /* Efek saat kartu disentuh */
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #713ab9;
+            margin-bottom: 10px;
+        }
+
+        /* Bagian tombol interaktif */
+        .fun-fact {
+            background: #eee5ff;
+            text-align: center;
+            padding: 35px 20px;
+            border-radius: 15px;
+            margin-top: 35px;
+        }
+
+        .fun-fact h2 {
+            color: #713ab9;
+            margin-bottom: 10px;
+        }
+
+        #factText {
+            margin: 20px auto;
+            max-width: 600px;
+            font-size: 17px;
+            min-height: 55px;
+        }
+
+        button {
+            background: #713ab9;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #51258d;
+            transform: scale(1.05);
+        }
+
+        /* Bagian footer */
+        footer {
+            background: #54258e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Membuat tampilan responsif untuk HP */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 29px;
+            }
+
+            .tips {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                margin: 25px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Bagian judul website -->
+    <header>
+        <h1>🌾 Ketahanan Pangan Indonesia</h1>
+        <p>
+            Mewujudkan masa depan yang sehat dan sejahtera
+            melalui ketersediaan pangan yang cukup dan berkualitas.
+        </p>
+    </header>
+
+    <main class="container">
+
+        <!-- Penjelasan tentang ketahanan pangan -->
+        <section class="intro">
+            <h2>Apa Itu Ketahanan Pangan?</h2>
+
+            <p>
+                Ketahanan pangan adalah kondisi ketika setiap orang
+                memiliki akses terhadap pangan yang cukup, aman,
+                bergizi, dan terjangkau untuk hidup sehat dan aktif.
+                Ketahanan pangan penting untuk mendukung kesejahteraan
+                masyarakat dan masa depan bangsa.
+            </p>
+        </section>
+
+        <!-- Daftar tiga tips menjaga ketahanan pangan -->
+        <h2 class="tips-title">3 Tips Menjaga Ketahanan Pangan</h2>
+
+        <section class="tips">
+
+            <div class="card">
+                <div class="icon">🌱</div>
+                <h3>1. Menanam Tanaman Pangan</h3>
+                <p>
+                    Manfaatkan lahan kosong untuk menanam sayuran,
+                    cabai, atau tanaman pangan lainnya.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🥗</div>
+                <h3>2. Mengurangi Pemborosan</h3>
+                <p>
+                    Ambil makanan secukupnya dan simpan bahan
+                    makanan dengan benar agar tidak terbuang.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌾</div>
+                <h3>3. Mengonsumsi Pangan Lokal</h3>
+                <p>
+                    Pilih bahan pangan lokal seperti singkong,
+                    jagung, ubi, dan hasil pertanian daerah.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Bagian interaktif Tahukah Kamu -->
+        <section class="fun-fact">
+
+            <h2>💡 Tahukah Kamu?</h2>
+
+            <p>
+                Klik tombol di bawah untuk mendapatkan
+                informasi menarik tentang ketahanan pangan!
+            </p>
+
+            <p id="factText">
+                Yuk, temukan fakta menarik seputar pangan!
+            </p>
+
+            <button onclick="tampilkanTips()">
+                Tahukah Kamu?
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- Bagian penutup website -->
+    <footer>
+        <p>© 2026 Edukasi Ketahanan Pangan | Workshop Siswa Kelas 12</p>
+    </footer>
+
+    <script>
+        // Daftar informasi yang akan ditampilkan
+        const tips = [
+            "Indonesia memiliki beragam sumber karbohidrat selain nasi, seperti jagung, singkong, dan ubi.",
+
+            "Menanam sayuran sendiri di rumah dapat membantu memenuhi kebutuhan pangan keluarga.",
+
+            "Membuang makanan berarti menyia-nyiakan air, energi, dan sumber daya yang digunakan untuk memproduksinya.",
+
+            "Membeli hasil panen petani lokal dapat membantu mendukung perekonomian masyarakat.",
+
+            "Menyimpan makanan dengan suhu yang tepat dapat membantu memperpanjang masa simpannya.",
+
+            "Diversifikasi pangan berarti memanfaatkan berbagai jenis bahan pangan agar tidak bergantung pada satu sumber saja."
+        ];
+
+        // Variabel untuk menyimpan tips sebelumnya
+        let tipsSebelumnya = -1;
+
+        // Fungsi yang dijalankan ketika tombol diklik
+        function tampilkanTips() {
+
+            let nomorAcak;
+
+            // Memilih nomor secara acak
+            // agar tidak mengulang tips yang sama secara langsung
+            do {
+                nomorAcak = Math.floor(Math.random() * tips.length);
+            } while (nomorAcak === tipsSebelumnya);
+
+            // Menampilkan tips ke halaman website
+            document.getElementById("factText").textContent =
+                tips[nomorAcak];
+
+            // Menyimpan nomor tips yang baru ditampilkan
+            tipsSebelumnya = nomorAcak;
+        }
+    </script>
+
+</body>
+</html>
